@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+} 
+
+/* ------------NAVBAR-----------*/
+
+ .navbar  {
+    background-color: #092635;
+    overflow: hidden;
+    width: 100% !important;
+    background: none;
+    
+}
+
+
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: justify;
+    padding: 30px 20px;
+    text-decoration: none;
+}
+
+
+.nav:hover {
+    color: black;
+    background-color: aliceblue;
+    animation: bubble 0.2s ease-out;
+    
+}
+.nav {
+    padding-left: 50px !important;
+}
+
+@keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+/* -------------------------------*/
+/* --------------BODY----------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./assets/pexels-tim-mossholder-2096622.jpg);
+    
+}
+
+@keyframes anim {
+    
+    100% { 
+        border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%
+    }
+    10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%
+	}
+    20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%
+	}
+    30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%
+    }
+    40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%
+	}
+    50% {
+		border-radius: 100%
+    }
+    60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%
+	}
+    70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%
+    }
+    80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%
+	}
+
+}
+
+.edi {
+    width: 400px;
+    animation-name: anim ;
+    animation: anim 30s infinite;
+    -webkit-box-shadow: 17px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 17px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    
+    
+    
+    
+     
+}
+
+
+
+
