@@ -1,0 +1,204 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------NAVBAR-----------*/
+.ul-hidden {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar {
+  background-color: #092635;
+  overflow: hidden;
+  width: 100% !important;
+  background: none;
+}
+
+.navbar a {
+  float: left;
+  display: flex;
+  color: white;
+  text-align: justify;
+  padding: 30px 20px;
+  text-decoration: none;
+}
+
+.nav:hover {
+  color: black;
+  background-color: aliceblue;
+  animation: bubble 0.2s ease-out;
+  opacity: 0.8;
+}
+.nav {
+  padding-left: 50px !important;
+}
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* -------------------------------*/
+/* --------------BODY----------- */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./assets/pexels-tim-mossholder-2096622.jpg);
+}
+/* borders of a photo */
+@keyframes anim {
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+  }
+  10% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+  20% {
+    border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+  }
+  30% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+  }
+  40% {
+    border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+  }
+  50% {
+    border-radius: 100%;
+  }
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+  70% {
+    border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+  }
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
+
+  90% {
+    border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}
+
+.edi {
+  width: 400px;
+  animation-name: anim;
+  animation: anim 30s infinite;
+  -webkit-box-shadow: 17px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 17px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 17px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+@media only screen and (max-width: 840px) {
+  .navbar a {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    float: right;
+    padding-right: 10px;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .hamburger:hover {
+    animation: bub 0.5s ease-out;
+  }
+  @keyframes bub {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* DROP MENU */
+
+  .nav {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .menu--hidden {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .menu--hidden ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu--hidden li {
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  .pick:hover {
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    color: #031822;
+    position: fixed;
+  }
+
+  .menu--show {
+    width: 100%;
+    height: 150px;
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    padding-right: 0px;
+
+    opacity: 90%;
+    background-image: linear-gradient(160deg, #031822, #3b7fa1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
